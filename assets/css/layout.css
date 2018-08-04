@@ -1,0 +1,405 @@
+@charset "UTF-8";
+
+/* GamePlay Font */
+@font-face {
+    font-family:'samim';
+    src:url(../fonts/samim.eot);
+    src:local(Samim-FD),local(samim),url(../fonts/samim.eot?#iefix) format("embedded-opentype"),url(../fonts/samim.woff2) format("woff2"),url(../fonts/samim.woff) format("woff"),url(../fonts/samim.ttf) format("truetype");
+    font-weight:400;
+    font-style:normal
+}
+.samim-font {
+    font-family:'samim'
+}
+
+/* Global Layout */
+html {
+    overflow:scroll;
+    overflow-x:hidden
+}
+body {
+    background:#2F3041!important;
+    padding-top:0!important;
+    margin-top:0!important
+}
+audio {
+    display:none;
+    visibility:hidden
+}
+noscript {
+    color:#fff;
+    font-family:'samim'
+}
+::-webkit-scrollbar {
+    display:none
+}
+
+/* WaterMark Page Animation */
+.watermark {
+    background:url(../images/animation.png)!important;
+    background-size:auto;
+    animation:slid 200s;
+    -webkit-animation:slid 200s;
+    -moz-animation:slid 200s;
+    -o-animation:slid 200s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-play-state:running;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-play-state:running;
+    -moz-animation-timing-function:linear;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:alternate;
+    -moz-animation-play-state:running;
+    height: 100% !important;
+    min-height:750px
+}
+.watermark-stop {
+    background:url(../images/animation.png)!important;
+    background-size:auto;
+    height: 100% !important;
+    min-height:750px
+}
+@keyframes slid {
+    0% {
+        background-position:0 0
+    }
+
+    100% {
+        background-position:0 -5900px
+    }
+}
+@-webkit-keyframes slid {
+    0% {
+        background-position:0 0
+    }
+
+    100% {
+        background-position:0 -5900px
+    }
+}
+@-moz-keyframes slid {
+    0% {
+        background-position:0 0
+    }
+
+    100% {
+        background-position:0 -5900px
+    }
+}
+@-ms-keyframes slid {
+    0% {
+        background-position:0 0
+    }
+
+    100% {
+        background-position:0 -5900px
+    }
+}
+@-o-keyframes slid {
+    0% {
+        background-position:0 0
+    }
+
+    100% {
+        background-position:0 -5900px
+    }
+}
+
+/* Index Page Layout */
+.home-header .container {
+    margin:0 auto;
+    padding-top:15px
+}
+.home-start .container {
+    margin:120px auto;
+    padding:50px 0
+}
+.home-start .row {
+    width:100%!important;
+    margin:auto
+}
+.start-play {
+    background:#FFC425;
+    width:210px;
+    height:210px;
+    border-radius:100%;
+    box-shadow:0 0 500px #000;
+    display:inline-block
+}
+.start-play span {
+    margin-top:70px;
+    margin-left:10px
+}
+.center-item {
+    margin:auto;
+    text-align:center;
+    width:100%
+}
+.site-name {
+    margin:20px
+}
+.site-name p {
+    font-size:12px;
+    line-height:10px
+}
+.fanavard {
+    margin-top:18px
+}
+.home-footer .container {
+    margin:0 auto 30px
+}
+.handler-box {
+    padding-left:0!important;
+    margin-left:0!important
+}
+.handler-box div {
+    border-radius:100%;
+    display:inline-block;
+    background:#ea3457;
+    width:50px;
+    height:50px;
+    text-align:center
+}
+.handler-box div span {
+    margin-top:17.2px
+}
+.copyright-box p {
+    font-size:12px;
+    margin-top:16.2px
+}
+.close-modal,.handler-box a {
+    cursor:pointer
+}
+.modal-body p {
+    text-align:justify!important;
+    line-height:30px
+}
+.social-list a {
+    color:#000
+}
+.social-list div {
+    margin:auto;
+    text-align:center;
+    width:80%
+}
+
+/* GamePlay Page Layout */
+.home-game .container {
+    margin:0 auto 5px
+}
+.game-board {
+    background:#E2E2E2;
+    max-width:100%
+}
+.game-board td {
+    width:35px;
+    height:35px
+}
+.game-control {
+    position:absolute;
+    bottom:20px;
+    border-collapse:separate
+}
+.game-control td {
+    background:#E2E2E2;
+    border-radius:10px;
+    width:70px;
+    height:70px
+}
+.score-box {
+    position:absolute;
+    bottom:130px
+}
+.score-box td {
+    padding-bottom:10px
+}
+.score-box tr td:nth-child(even) {
+    width:70px;
+    text-align:left
+}
+.score-box tr td:nth-child(odd) {
+    border-left:3px solid #fff;
+    padding-left:10px
+}
+.score-box tr:nth-child(1) td:nth-child(1) {
+    color:#ffe600
+}
+
+.score-box tr:nth-child(2) td:nth-child(1) {
+    color:#00e7ff
+}
+
+.score-box tr:nth-child(3) td:nth-child(1) {
+    color:#ea3457
+}
+.word-slice {
+    text-align:center;
+    width:100%;
+    height:100%;
+    background:#343a40;
+    color:#fff
+}
+#lose-new-game {
+    cursor:pointer
+}
+.mobile-controller {
+    max-width:210px
+}
+.mobile-controller table {
+    margin:20px auto
+}
+.mobile-controller table a {
+    cursor:pointer;
+    width:100%;
+    display:block;
+    height:100%;
+    padding-top:11px
+}
+.mobile-controller table td {
+    background:#E2E2E2;
+    border-radius:10px;
+    width:70px;
+    height:70px
+}
+.currentSlice {
+    background:#a72828!important
+}
+.mobile-controller table {
+    border-collapse:separate
+}
+.modal p {
+    font-size:15px!important;
+    line-height:30px!important;
+    margin-bottom:0
+}
+.modal .modal-title {
+    font-size:20px
+}
+.game-control a {
+    cursor:pointer;
+    width:100%;
+    display:block;
+    height:100%;
+    padding-top:17px
+}
+
+/* Responsive Control With MediaQuery CSS */
+@media only screen and (max-width: 767px) {
+    .fanavard {
+        display:none
+    }
+    .copyright-box,.handler-box,.logo {
+        float:none!important;
+        margin:auto;
+        text-align:center!important
+    }
+    .copyright-box {
+        margin-bottom:20px
+    }
+    .copyright-box p {
+        text-align:center!important;
+        margin:auto;
+        line-height:30px
+    }
+    .home-start .container {
+        padding:0!important;
+        margin:60px auto
+    }
+    .logo-container {
+        width:160px;
+        margin:10px auto
+    }
+    .logo-container img {
+        width:50px
+    }
+    .site-name {
+        margin:10px
+    }
+    .site-name p {
+        font-size:10px!important
+    }
+    .fanavard {
+        margin-top:40px!important
+    }
+    .start-play {
+        width:190px!important;
+        height:190px!important;
+        box-shadow:0 0 50px #000
+    }
+    .start-play span {
+        margin-top:55px;
+        margin-left:10px
+    }
+    .game-box-left,.game-box-right {
+        display:block!important;
+        width:100%!important
+    }
+    .game-box-right {
+        margin-top:0!important
+    }
+    .game-board {
+        margin:auto
+    }
+    .home-game {
+        margin:0 auto
+    }
+    .score-box,.game-control {
+        margin-top:50px;
+        position:relative!important;
+        bottom:0!important
+    }
+    .score-box {
+        font-size:12px;
+        margin:auto!important;
+        margin-top:50px!important
+    }
+    .game-control {
+        margin:auto!important
+    }
+    .game-control td {
+        padding:5px 10px;
+        width:60px;
+        height:60px
+    }
+    .game-control span {
+        font-size:26px!important
+    }
+    .watermark-stop {
+        height:1000px!important
+    }
+    .watermark {
+        height:800px!important
+    }
+    .mobile-controller {
+        display:block;
+        visibility:visible;
+        margin:auto
+    }
+    .game-board td {
+        width:30px;
+        height:30px;
+        font-size:10px
+    }
+    .mobile-controller table td {
+        width:60px;
+        height:60px
+    }
+    .mobile-controller span {
+        font-size:35px
+    }
+    .modal p {
+        font-size:13px!important;
+        line-height:25px!important;
+        margin-bottom:0!important
+    }
+    .modal .modal-title {
+        font-size:17px
+    }
+    .game-control a {
+        padding-top:13px!important
+    }
+}

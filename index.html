@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>بازی با کلمات</title>
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/lib/font-awesome/css/all.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="geo.region" content="IR" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="robots" content="index, follow" />
+    <meta name="generator" content="https://plus.google.com/u/0/101126820349069886493" />
+    <meta name="author" content="amirsh.nll@gmail.com">
+    <meta property="og:locale" content="fa-IR" />
+    <meta property="og:site_name" content="بازی با کلمات" />
+    <meta property="og:title" content="بازی با کلمات" />
+    <meta property="og:type" content="Online Game" />
+    <meta property="og:image" content="assets/images/favicon.png" />
+    <meta property="og:description" content="این بازی که تحت عنوان بازی با کلمات نامگذاری شده است در واقع یک نسخه ی پازلی کلمات برای بازی tetris می باشد" />
+    <meta name="description" content="این بازی که تحت عنوان بازی با کلمات نامگذاری شده است در واقع یک نسخه ی پازلی کلمات برای بازی tetris می باشد" />
+    <meta name="keywords" content="tetris,game,puzzle,tetris game,puzzle game,بازی,بازی آنلاین,کلمات,بازی با کلمات,پازل,بازی آنلاین پازل" />
+</head>
+<body id="body">
+    <div id="watermark" class="watermark">
+        <noscript>مرورگر شما از جاوااسکریپت پشتیبانی نمی کند</noscript>
+
+        <!-- Page Header -->
+        <header class="home-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo float-right text-light samim-font col-md-5">
+                            <div class="logo-container">
+                                <div class="float-right">
+                                    <img src="assets/images/logo.png" class="img-fluid" width="70" height="70" alt="بازی با کلمات" title="بازی با کلمات" />
+                                </div>
+                                <div class="float-right site-name text-right">
+                                    <p>بازی با کلمات</p>
+                                    <p>کاری از گروه : سیبنال</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="fanavard float-left col-md-2">
+                            <img src="assets/images/fanavard.png" class="img-fluid" width="84" height="34" alt="فن آورد" title="فن آورد" />
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Center Box -->
+        <div class="home-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center-item">
+                            <a id="start-game" title="شروع بازی" class="start-play-link text-light">
+                                <div class="start-play text-center">
+                                    <span class="fa fa-5x fa-play"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Footer -->
+        <footer class="home-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="col-md-6 text-light samim-font text-right float-right copyright-box" dir="rtl">
+                            <p>&copy; 2018 - 1397 تمامی حقوق این بازی آنلاین محفوظ می باشد.</p>
+                        </div>
+
+                        <div class="col-md-6 handler-box text-light float-left">
+                            <a title="راهنمای بازی" data-toggle="modal" data-target="#helpModal">
+                                <div class="help-game">
+                                    <span class="fa fa-lg fa-question"></span>
+                                </div>
+                            </a>
+
+                            <a title="درباره ی بازی" data-toggle="modal" data-target="#aboutModal">
+                                <div class="puzzle-list">
+                                    <span class="fa fa-lg fa-puzzle-piece"></span>
+                                </div>
+                            </a>
+
+                            <a title="اشتراک با دوستان" data-toggle="modal" data-target="#shareModal">
+                                <div class="share-social">
+                                    <span class="fa fa-lg fa-share"></span>
+                                </div>
+                            </a>
+
+                            <a title="موسیقی بازی" id="music-off" style="display: none;">
+                                <div class="music-play">
+                                    <span class="fa fa-lg fa-volume-off"></span>
+                                </div>
+                            </a>
+
+                            <a title="موسیقی بازی" id="music-on">
+                                <div class="music-play">
+                                    <span class="fa fa-lg fa-volume-up"></span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal Window - PopUpPage -->
+    <div class="modal fade samim-font" id="helpModal" role="dialog" dir="rtl">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><span class="fa fa-lg fa-question"></span> راهنمای بازی</h4>
+                </div>
+                <div class="modal-body text-right">
+                    <p>برای شروع بازی ابتدا روی کلید شروع در صفحه ی اصلی بزنید تا به صفحه ی بازی هدایت شوید. شما در این بازی به عنوان بازیکن وظیفه دارید حروفی که از بالای صفحه ی بازی وارد صفحه می شوند را با کلیدهای جهت دار چپ و راست حرکت دهید و در کنار هم بچینید تا بتوانید کلمات معناداری را تولید کنید و صفحه ی بازی را خالی تر کرده و امتیاز کسب کنید. توجه داشته باشید که این بازی تا زمانی ادامه دارد که صفحه ی بازی هنوز پر نشده باشد.</p>
+                    <p><strong>کلیدهای ترکیبی</strong></p>
+                    <div>
+                        <p>کلید Enter (صفحه اصلی) : شروع بازی</p>
+                        <p>کلید H : آموزش بازی</p>
+                        <p>کلید A : درباره ی بازی</p>
+                        <p>کلید S : اشتراک بازی</p>
+                        <p>کلید 0 : قطع صدا</p>
+                        <p>کلید 1 : وصل صدا</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="close-modal bg-white" data-dismiss="modal"><span class="fa fa-lg fa-window-close text-danger"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade samim-font" id="aboutModal" role="dialog" dir="rtl">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><span class="fa fa-lg fa-puzzle-piece"></span> درباره ی بازی</h4>
+                </div>
+                <div class="modal-body text-right">
+                    <p>تتریس (به روسی: Тетрис) (به فارسی: خانه سازی) نوعی بازی ویدئویی معمایی مصور رایانه‌ای شبیه به یک پازل بی‌انتها است که در آن از قطعات یا مهره‌های چهارگوشی به نام تترومینو استفاده می‌شود. طراح و برنامه‌نویس این بازی در اصل توسط طراح بازی روسی الکسی پاژیتنوف انجام شده‌است. این بازی در ۶ ژوئن ۱۹۸۴ منتشر شد. //
+                        <a href="https://fa.wikipedia.org/wiki/%D8%AA%D8%AA%D8%B1%DB%8C%D8%B3" title="ویکی پدیا">ویکی پدیا</a></p>
+                    <p>بازی فعلی که تحت عنوان "بازی با کلمات" نامگذاری شده است یک نسخه ی معادل مثل بازی اصلی tetris است که بجای کار با اشکال از حروف فارسی در آن استفاده شده و به جای حذف ردیف ها به صورت افقی در صورت پر شدن در صورت چیدن لغات معنادار این اتفاق می افتد.</p>
+                    <p><strong>گروه برنامه نویسی سیبنال</strong></p>
+                </div>
+                <div class="modal-footer">
+                    <a class="close-modal bg-white" data-dismiss="modal"><span class="fa fa-lg fa-window-close text-danger"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade samim-font" id="shareModal" role="dialog" dir="rtl">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><span class="fa fa-lg fa-share"></span> اشتراک با دوستان</h4>
+                </div>
+                <div class="modal-body text-right social-list">
+                    <p>بازی آنلاین "بازی با کلمات" را در شبکه های اجتماعی خود با دوستانتان به اشتراک بگذارید:</p>
+                    <div>
+                        <a href="https://www.facebook.com/" title="اشتراک در فیس بوک"><span class="fab fa-2x fa-facebook"></span></a>
+                        <a href="https://twitter.com/" title="اشتراک در توییتر"><span class="fab fa-2x fa-twitter"></span></a>
+                        <a href="https://www.linkedin.com/" title="اشتراک در لینکداین"><span class="fab fa-2x fa-linkedin"></span></a>
+                        <a href="https://www.instagram.com/" title="اشتراک در اینستاگرام"><span class="fab fa-2x fa-instagram"></span></a>
+                        <a href="https://telegram.org/" title="اشتراک در تلگرام"><span class="fab fa-2x fa-telegram"></span></a>
+                        <a href="https://vimeo.com/" title="اشتراک در ویمو"><span class="fab fa-2x fa-vimeo"></span></a>
+                        <a href="https://plus.google.com/" title="اشتراک در گوگل پلاس"><span class="fab fa-2x fa-google-plus"></span></a>
+                        <a href="https://www.slideshare.net/" title="اشتراک در اسلایدشیر"><span class="fab fa-2x fa-slideshare"></span></a>
+                        <a href="https://www.whatsapp.com/" title="اشتراک در واتساپ"><span class="fab fa-2x fa-whatsapp"></span></a>
+                        <a href="https://www.pinterest.com/" title="اشتراک در پینترست"><span class="fab fa-2x fa-pinterest"></span></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="close-modal bg-white" data-dismiss="modal"><span class="fa fa-lg fa-window-close text-danger"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WebPage Music -->
+    <audio autoplay="autoplay" loop="loop" id="music-player">
+        <source src="assets/sound/music.ogg" type="audio/ogg">
+        <source src="assets/sound/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="assets/lib/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
