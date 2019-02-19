@@ -13,5 +13,5 @@
 
 **Installation Guide:**
 * 1. Copy Project In Localhost
-* 1. Open http://localhost/index.html or hostname/index.html in root Folder. (Better Use Xampp)
+* 2. Open http://localhost/index.html or hostname/index.html in root Folder. (Better Use Xampp)
 * 3. Enjoy This Game
