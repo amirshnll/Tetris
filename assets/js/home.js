@@ -84,3 +84,5 @@ music.play();
 
 var waterMark = document.getElementById("watermark");
 waterMark.style.height = screen.height + "px";
+
+document.getElementById("copyrightyear").innerHTML=new Date().getFullYear();

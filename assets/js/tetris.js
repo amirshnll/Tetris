@@ -716,3 +716,5 @@ intervalGame = setInterval(function () {
     "use strict";
     tetrisGame.sliceBottom();
 }, gameSpeed);
+
+document.getElementById("copyrightyear").innerHTML=new Date().getFullYear();
